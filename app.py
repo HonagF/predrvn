@@ -3,7 +3,7 @@ import sklearn
 import pickle
 
 st.title('REVENUE PREDICTION')
-temp = st.number_input('Input temperature')
+temp = st.number_input('Input Temperature')
 model = pickle.load(open(ice_scream_revenue))
 if st.button('Predict'):
-  print('a')
+  
