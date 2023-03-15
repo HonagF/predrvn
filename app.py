@@ -10,4 +10,4 @@ model = pickle.load(open('ice_scream_revenue', "rb"))
 rvn = model.predict(t)
 if st.button('Predict'):
   st.write('Revenue Prediction')
-  st.success(rvn)
+  st.success(float(rvn))
