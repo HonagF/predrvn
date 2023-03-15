@@ -9,5 +9,5 @@ t = np.array(temp).reshape(-1,1)
 model = pickle.load(open('ice_scream_revenue', "rb"))
 rvn = model.predict(t)
 if st.button('Predict'):
-  st.text('Revenue Prediction')
+  st.write('Revenue Prediction')
   st.success(rvn)
