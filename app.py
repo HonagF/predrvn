@@ -7,4 +7,4 @@ temp = st.number_input('Input temperature')
 
 model = pickle.load(open(ice_scream_revenue))
 if st.button('Predict'):
-  
+  print(model.predict(temp))
