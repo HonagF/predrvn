@@ -9,6 +9,6 @@ t = np.array(temp).reshape(-1,1)
 model = pickle.load(open('ice_scream_revenue', "rb"))
 rvn = model.predict(t)
 if st.button('Predict'):
-  st.write('MAY BI BO TU')
-  st.success(float(rvn), ' NAM')
+  st.write('MAY BI BO TU (NAM)')
+  st.success(float(rvn))
   st.write('NGU NHU CON CHO')
